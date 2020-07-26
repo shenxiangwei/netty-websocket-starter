@@ -38,6 +38,6 @@ websocket.port=8091
 
 5.启动springboot，websocket服务端会在实例化WebsocketServer Bean的时候，启动服务
 
-6.没了，反正也没人看，写给自己当个笔记吧，详细说明见wiki
+6.没了，反正也没人看，写给自己当个笔记吧，详细说明见 https://blog.csdn.net/m0_38089214/article/details/107602477
 
 
