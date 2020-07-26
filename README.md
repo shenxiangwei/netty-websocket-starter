@@ -36,6 +36,8 @@ public class TestBean {
 4.服务端默认端口8090，可在springboot配置文件，添加如下配置，更改启动端口
 websocket.port=8091
 
-5.没了，反正也没人看，写给自己当个笔记吧
+5.启动springboot，websocket服务端会在实例化WebsocketServer Bean的时候，启动服务
+
+6.没了，反正也没人看，写给自己当个笔记吧
 
 
