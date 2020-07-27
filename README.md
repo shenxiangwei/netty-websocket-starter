@@ -29,7 +29,7 @@ public class TestBean {
 
     @Bean
     WebsocketServer websocketServer(){
-        return new WebsocketServer(listener);
+        return new WebsocketServer(listenerImpl);
     }
 }
 ```
