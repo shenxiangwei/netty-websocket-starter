@@ -69,10 +69,12 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
         // 判断是否关闭链路的指令
         if (frame instanceof CloseWebSocketFrame) {
             handshaker.close(ctx.channel(), (CloseWebSocketFrame) frame.retain());
+            return;
         }
         // 判断是否ping消息
         if (frame instanceof PingWebSocketFrame) {
             ctx.channel().write(new PongWebSocketFrame(frame.content().retain()));
+            logger.info("收到心跳包:"+frame.content());
             return;
         }
         // 本例程仅支持文本消息，不支持二进制消息
